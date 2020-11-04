@@ -99,7 +99,7 @@ request.config = function globalConfig (options = {}) {
     if (!isString(baseUrl)) {
       throw new Error('baseUrl must be a string.')
     }
-    if (!(/^https/.test(baseUrl))) {
+    if (!(/^https?/.test(baseUrl))) {
       throw new Error('baseUrl is not valid.')
     }
   }
