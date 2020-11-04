@@ -129,7 +129,7 @@ class Request {
       responseType = 'text',
     } = opts
 
-    if (!(/^https/.test(url))) {
+    if (!(/^https?/.test(url))) {
       if (!this.baseUrl) {
         throw new Error('url is not valid.')
       }
